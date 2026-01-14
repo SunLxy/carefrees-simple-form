@@ -9,7 +9,7 @@
     "watch:react-native": "npm run-script watch --workspace @carefrees/react-native-simple-form",
     "build:vue": "npm run-script build --workspace @carefrees/vue-simple-form-element-plus",
     "watch:vue": "npm run-script watch --workspace @carefrees/vue-simple-form-element-plus",
-    "build:all": "npm run build &&  npm run build:react && npm run build:react-native && npm run build:vue",
+    "build:all": "npm run build:react && npm run build:react-native && npm run build:vue",
     "build:docs": "npm run-script build --workspace docs",
     "start:docs": "npm run-script dev --workspace docs",
     "start:vue": "npm run-script start --workspace example_vue",
