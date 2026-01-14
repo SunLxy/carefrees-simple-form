@@ -2,7 +2,7 @@
 pageType: home
 
 hero:
-  name: Form表单工具
+  name: 简化表单
   # text: A cool website!
   # tagline: This is the tagline
   actions:
