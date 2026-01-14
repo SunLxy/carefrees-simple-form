@@ -3,9 +3,9 @@ import { defineConfig } from 'rspress/config';
 import { pluginPreview } from '@rspress/plugin-preview';
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/carefrees-form-utils/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/carefrees-simple-form/' : '/',
   root: path.join(__dirname, 'docs'),
-  title: 'Form表单工具',
+  title: 'Simple Form',
   icon: '/logo.jpg',
   globalStyles: path.join(__dirname, 'styles/index.css'),
   logo: {
@@ -17,7 +17,7 @@ export default defineConfig({
       {
         icon: 'github',
         mode: 'link',
-        content: 'https://github.com/SunLxy/carefrees-form-utils',
+        content: 'https://github.com/SunLxy/carefrees-simple-form',
       },
     ],
   },
