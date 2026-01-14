@@ -1,0 +1,49 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "build:react": "npm run-script build --workspace @carefrees/react-simple-form-antd",
+    "watch:react": "npm run-script watch --workspace @carefrees/react-simple-form-antd",
+    "build:react-native": "npm run-script build --workspace @carefrees/react-native-simple-form",
+    "watch:react-native": "npm run-script watch --workspace @carefrees/react-native-simple-form",
+    "build:vue": "npm run-script build --workspace @carefrees/vue-simple-form-element-plus",
+    "watch:vue": "npm run-script watch --workspace @carefrees/vue-simple-form-element-plus",
+    "build:all": "npm run build &&  npm run build:react && npm run build:react-native && npm run build:vue",
+    "build:docs": "npm run-script build --workspace docs",
+    "start:docs": "npm run-script dev --workspace docs",
+    "start:vue": "npm run-script start --workspace example_vue",
+    "start:react": "npm run-script start --workspace example_react",
+    "version": "lerna version --force-publish=* --no-changelog --no-git-tag-version --no-push",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""
+  },
+  "dependencies": {
+    "@carefrees/rslib": "~0.1.1",
+    "husky": "~8.0.0",
+    "lerna": "~5.4.0",
+    "prettier": "~2.7.0",
+    "pretty-quick": "~3.1.3",
+    "lint-staged": "~13.0.0",
+    "typescript": "~5.8.3"
+  },
+  "overrides": {
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7"
+  },
+  "resolutions": {
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7"
+  },
+  "lint-staged": {
+    "*.{js,jsx,tsx,ts,less,md,json}": "prettier --write"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "workspaces": [
+    "core",
+    "docs",
+    "packages/*",
+    "examples/*"
+  ]
+}
